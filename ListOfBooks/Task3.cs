@@ -385,7 +385,7 @@ namespace ListOfBooks
 
             if (temp == null)
                 return "Book with this name wasn't found";
-            return temp.ToString();
+            return (bookList.IndexOf(temp)+1) + "\n" + temp.ToString();
 
         }
 
